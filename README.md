@@ -6,7 +6,7 @@ Please run all Cells
 2. Click Double Play Button to Restart Kernel to Run all Cells
 3. Click Double Play Button to Restart Kernel to Run all Cells
 
-[![Open in Binder (Jupyter)]https://mybinder.org/v2/gh/youssefabdelwahab/NYC_Shootings_Analysis/b57063c79f2d2b46a009d46da1bc48d716203b01?urlpath=lab%2Ftree%2FNYC_Shooting_Analysis.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/youssefabdelwahab/NYC_Shootings_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2FNYC_Shooting_Analysis.ipynb)
 
 
 ### 📌 Open R HTML File (`.html`):
