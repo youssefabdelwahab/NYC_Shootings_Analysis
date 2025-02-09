@@ -1,0 +1,10 @@
+plotly
+pandas
+geopandas
+numpy
+dash
+shapely
+matplotlib
+folium
+scikit-learn
+ipython
