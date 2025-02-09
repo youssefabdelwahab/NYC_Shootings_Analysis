@@ -6,7 +6,8 @@ Please run all Cells
 2. Click Double Play Button to Restart Kernel to Run all Cells
 3. Wait till all cells load to interact with visuals
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/youssefabdelwahab/NYC_Shootings_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2FNYC_Shooting_Analysis.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/youssefabdelwahab/NYC_Shootings_Analysis/HEAD?urlpath=%2Fdoc%2Ftree%2FNYC_Shooting_Analysis.ipynb)
+
 
 
 ### 📌 Open R HTML File (`.html`):
