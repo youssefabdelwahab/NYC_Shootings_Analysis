@@ -13,7 +13,7 @@
 
 <meta name="date" content="2025-02-09" />
 
-<title>NYC_Inferences</title>
+<title>NYC_Shooting_Incidents_Inferences</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,7 +350,7 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">NYC_Inferences</h1>
+<h1 class="title toc-ignore">NYC_Shooting_Incidents_Inferences</h1>
 <h4 class="author">Youssef Abdelwahab</h4>
 <h4 class="date">2025-02-09</h4>
 
@@ -370,6 +370,23 @@ library(dplyr)</code></pre>
 <pre><code>## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
+<p>A fundamental assumption we made in this study is that the dataset is
+not normally distributed. This is due to potential data omissions, such
+as sensitive cases that law enforcement agencies may exclude for
+security reasons. Additionally, data collection inconsistencies can
+impact the overall representation of incidents. In many cases, small
+sample sizes or imbalanced groups (e.g., murder vs. non-murder
+shootings) can distort the applicability of normality assumptions.
+Bootstrapping is robust to outliers and does not assume a specific
+distribution, making it a better fit for this type of analysis. Finally,
+Count data (proportions, frequencies) often follows a binomial or
+Poisson-like distribution, not a normal distribution. To account for
+these limitations, nonparametric techniques such as bootstrapping are
+applied. Using a random sample of 5,000 units, we estimate differences
+in proportions between various demographic groups, allowing for more
+robust inferences about trends in age and racial disparities. We speak
+more of bootstrapping in the latter parts of this sections where we move
+to R Briefly</p>
 <pre class="r"><code>nyc_dataset = read.csv(&quot;NYPD_Shooting_Incident_Data__Historic__20250130.csv&quot;)
 nyc_dataset_cleaned = nyc_dataset[, !(names(nyc_dataset) %in% c(&quot;LOC_CLASSFCTN_DESC&quot;, &quot;LOC_OF_OCCUR_DESC&quot;, &quot;LOCATION_DESC&quot;))]</code></pre>
 <pre class="r"><code>colnames(nyc_dataset_cleaned)</code></pre>
